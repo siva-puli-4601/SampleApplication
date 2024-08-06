@@ -76,7 +76,7 @@
         
         function validatePhone(phone) {
             const phonePattern = /^[\d\s\+\-()]{10,}$/;
-            return phonePattern.test(phone);
+            return phonePattern.test(phone) && phone.length===10;
         }
     </script>
 </body>
